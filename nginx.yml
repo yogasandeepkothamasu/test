@@ -1,13 +1,14 @@
 ---
-- name: This sets up an nginx webserver
-  hosts: localhost
+- hosts: 18.219.32.123
   become: true
   tasks:
-  - name: Install the nginx rpm
-    yum:
-      name: nginx
-      state: present
-  - name: start the nginx service
-    service:
-      name: nginx
-      state: started
+    - name: Setup nginx conf
+      template:
+        src=nginx.conf.tpl
+        dest=/etc/nginx/nginx.conf
+      notify: restart nginx
+  handlers:
+    - name: restart nginx
+      service:
+        name=nginx
+        state=restarted
