@@ -1,6 +1,6 @@
 ---
 - hosts: 18.191.38.36
-  become: sudo
+  sudo: yes
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
