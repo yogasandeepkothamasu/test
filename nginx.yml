@@ -1,4 +1,4 @@
----
+-vvvv
 - hosts: 18.219.32.123
   become: true
   tasks:
