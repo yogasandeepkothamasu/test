@@ -1,3 +1,7 @@
-echo example of an array
-arr=("hiiii" "hello")
-echo array value is :${arr[1]}
+echo example of if-else statement
+echo enter x
+read x
+echo enter y
+read y
+tot=`expr $x+$y`
+echo total is $tot
