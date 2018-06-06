@@ -4,10 +4,10 @@
   become: true
   tasks:
   - name: Install the httpd rpm
-    yum:
+    apt-get:
       name: httpd
       state: present
   - name: start the httpd service
-    service:
+    systemctl:
       name: httpd
       state: started
