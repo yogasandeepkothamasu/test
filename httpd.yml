@@ -1,5 +1,5 @@
 ---
-- hosts: 18.191.38.36
+- hosts: localhost
   sudo: yes
   tasks:
     - name: install apache2
