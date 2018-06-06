@@ -1,0 +1,3 @@
+---
+- PATH_ENV:
+    /.ssh/id_rsa
