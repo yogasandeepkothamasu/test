@@ -1,5 +1,4 @@
 ---
--vvvv
 - hosts: 18.191.38.36
   sudo: yes
   tasks:
