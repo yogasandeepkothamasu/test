@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: slave
   sudo: yes
   tasks:
     - name: install apache2
