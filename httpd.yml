@@ -3,11 +3,11 @@
   hosts: localhost
   become: true
   tasks:
-  - name: Install the httpd rpm
-    apt-get:
-      name: httpd
-      state: present
-  - name: start the httpd service
-    systemctl:
-      name: httpd
-      state: started
+    - name: Install the httpd rpm
+      apt-get:
+         name: httpd
+         state: present
+    - name: start the httpd service
+      systemctl:
+         name: httpd
+         state: started
