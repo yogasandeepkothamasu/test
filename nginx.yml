@@ -1,0 +1,13 @@
+---
+- name: This sets up an nginx webserver
+  hosts: localhost
+  become: true
+  tasks:
+  - name: Install the nginx rpm
+    yum:
+      name: nginx
+      state: present
+  - name: start the nginx service
+    service:
+      name: nginx
+      state: started
