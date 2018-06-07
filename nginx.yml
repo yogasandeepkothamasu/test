@@ -1,6 +1,6 @@
 ---
 - name: This sets up an nginx webserver
-  hosts: localhost
+  hosts: 18.221.156.4
   become: true
   tasks:
   - name: Install the nginx rpm
