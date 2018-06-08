@@ -1,7 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-- hosts: 18.188.176.154
-  gathering_facts: no
+  hosts: 18.188.176.154
   become: true
   tasks:
   - name: Install the httpd rpm
