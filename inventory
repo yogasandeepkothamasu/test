@@ -1,0 +1,5 @@
+---
+PATH_ENV:
+   /var/lib/jenkins/id_rsa
+hosts:
+   52.14.151.140
