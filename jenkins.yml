@@ -1,6 +1,6 @@
 ---
 - name: This setup a jenkins server
-  hosts: localhost
+  hosts: 35.231.197.215
   become: true
   tasks:
 
